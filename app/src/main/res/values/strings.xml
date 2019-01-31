@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="btn_cadastro">Cadastrar Contato</string>
+    <string name="btn_listar">Listar / Editar / Excluir</string>
+    <string name="Nome">Nome:</string>
+    <string name="Telefone">Telefone:</string>
+    <string name="salvar">Salvar Contato</string>
+    <string name="salvar_alteracoes">Salvar</string>
+    <string name="excluir_contato">Excluir</string>
+    <string name="codigo">Codigo:</string>
+
+</resources>

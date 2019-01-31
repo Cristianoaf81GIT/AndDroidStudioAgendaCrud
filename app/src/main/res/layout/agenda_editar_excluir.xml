@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Nome"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/nome_edicao"
+        android:inputType="textPersonName"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Telefone"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:inputType="phone"
+        android:id="@+id/telefone_edicao"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:columnCount="3"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/salvar_alteracoes"
+            android:background="@color/colorAccent"
+            android:textColor="#FFF"
+            android:layout_gravity="left"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_editar"
+            android:onClick="SalvarAtualizar"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/excluir_contato"
+            android:background="@color/colorAccent"
+            android:textColor="#FFF"
+            android:layout_gravity="left"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_excluir"
+            android:onClick="DeletaRegistro"/>
+
+    </GridLayout>
+
+
+</LinearLayout>
