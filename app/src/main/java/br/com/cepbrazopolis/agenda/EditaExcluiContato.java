@@ -45,7 +45,7 @@ public class EditaExcluiContato extends Activity {
         bundle = intent.getExtras();
 
         if(bundle == null){
-            CharSequence msg = "Nao foi possivel recuperar o id do contato";
+            CharSequence msg = "Não foi possivel recuperar o id do contato";
 
             Toast.makeText(
                     this,
@@ -119,7 +119,7 @@ public class EditaExcluiContato extends Activity {
                 startActivity(intent);
 
             }else {
-                CharSequence msg = "Falha ao atulizar dados!!!";
+                CharSequence msg = "Falha ao atualizar dados!!!";
                 Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
             }
         }
@@ -129,7 +129,7 @@ public class EditaExcluiContato extends Activity {
         final String opcao = "";
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("Exclusao");
-        alert.setMessage("Confirma Exclusao de registro?");
+        alert.setMessage("Confirma Exclusão de registro?");
         alert.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
@@ -154,7 +154,7 @@ public class EditaExcluiContato extends Activity {
 
             }
         });
-        alert.setNegativeButton("NAO", new DialogInterface.OnClickListener() {
+        alert.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
 
